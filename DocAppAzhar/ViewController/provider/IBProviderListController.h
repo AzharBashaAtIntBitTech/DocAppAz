@@ -9,5 +9,11 @@
 #import "IBBaseTableViewController.h"
 
 @interface IBProviderListController : IBBaseTableViewController
+{
+    NSMutableArray *userArray;
+    
+}
+@property (strong, nonatomic) NSMutableArray *filteredData;
+
 
 @end

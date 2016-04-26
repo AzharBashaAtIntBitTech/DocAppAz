@@ -25,6 +25,7 @@
 		2403FBDA1CCDF6CF00571335 /* IBPatientListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBD91CCDF6CF00571335 /* IBPatientListController.m */; };
 		2403FBDD1CCDF7C200571335 /* IBPatientAppointmentListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBDC1CCDF7C200571335 /* IBPatientAppointmentListController.m */; };
 		2403FBE01CCDF86200571335 /* IBLogInControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBDF1CCDF86200571335 /* IBLogInControllerViewController.m */; };
+		246EF6B91CCF75C7004B81E8 /* IBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 246EF6B81CCF75C7004B81E8 /* IBUser.m */; };
 		24AEBA401CCE2CD200A98AAD /* NetworkURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24AEBA3F1CCE2CD200A98AAD /* NetworkURL.plist */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		2403FBDC1CCDF7C200571335 /* IBPatientAppointmentListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBPatientAppointmentListController.m; sourceTree = "<group>"; };
 		2403FBDE1CCDF86200571335 /* IBLogInControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLogInControllerViewController.h; sourceTree = "<group>"; };
 		2403FBDF1CCDF86200571335 /* IBLogInControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLogInControllerViewController.m; sourceTree = "<group>"; };
+		246EF6B71CCF75C7004B81E8 /* IBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBUser.h; sourceTree = "<group>"; };
+		246EF6B81CCF75C7004B81E8 /* IBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBUser.m; sourceTree = "<group>"; };
 		24AEBA3F1CCE2CD200A98AAD /* NetworkURL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkURL.plist; sourceTree = "<group>"; };
 		24AEBA411CCE342800A98AAD /* IBAppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAppConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +184,8 @@
 				2403FBCE1CCDEF9600571335 /* IBDataManager.m */,
 				24AEBA411CCE342800A98AAD /* IBAppConstant.h */,
 				24AEBA3F1CCE2CD200A98AAD /* NetworkURL.plist */,
+				246EF6B71CCF75C7004B81E8 /* IBUser.h */,
+				246EF6B81CCF75C7004B81E8 /* IBUser.m */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				2403FBDD1CCDF7C200571335 /* IBPatientAppointmentListController.m in Sources */,
 				2403FB8C1CCDECD800571335 /* AppDelegate.m in Sources */,
 				2403FBC91CCDEEEE00571335 /* IBBaseTableViewController.m in Sources */,
+				246EF6B91CCF75C7004B81E8 /* IBUser.m in Sources */,
 				2403FBCF1CCDEF9600571335 /* IBDataManager.m in Sources */,
 				2403FBDA1CCDF6CF00571335 /* IBPatientListController.m in Sources */,
 				2403FBC61CCDEEC200571335 /* IBBaseViewController.m in Sources */,

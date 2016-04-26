@@ -10,6 +10,7 @@
 #import "IBBaseTableViewCell.h"
 #import "IBDataManager.h"
 #import "IBAppConstant.h"
+#import "IBUser.h"
 @interface IBProviderListController ()
 
 @end
@@ -19,31 +20,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void) viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
     [[IBDataManager getInstance]getDataFromURL:kallProviders parameter:nil onSuccess:^(NSData *data) {
         NSLog(@"%@",data);
         NSDictionary *userResponse =[NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSMutableArray *userResponseArray = [[userResponse objectForKey:@"d"]objectForKey:@"providers"];
         NSLog(@"%@",userResponseArray);
-        NSMutableArray *array = [[NSMutableArray alloc]init];
+        userArray = [[NSMutableArray alloc]init];
         for (int index = 0; index< [userResponseArray count]; index++) {
-            NSString *providerNames = [[userResponseArray objectAtIndex:index]objectForKey:@"fullName"];
-            [array addObject:providerNames];
+            IBUser *user = [[IBUser alloc]init];
+            user.fullName = [[userResponseArray objectAtIndex:index] objectForKey:@"fullName"];
+            [userArray addObject:user];
         }
-        NSLog(@"%@", array);
-        self.dataArray = array;
-        //var dataString = NSString(data: data!, encoding:NSUTF8StringEncoding);
-        NSString* myString;
-        myString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
-        NSLog(@"data is : %@", myString);
+        [self setDataArray:[userArray copy]];
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
     } onError:^(NSError *error) {
         
     }];
+    NSLog(@"%@", self.dataArray);
 
+    // Do any additional setup after loading the view.
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -64,14 +63,21 @@
 
 - (NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;//self.dataArray.count;
+    if (self.filteredData) {
+    return [self.filteredData count];
+}
+
+    return self.dataArray.count;
     
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     IBBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"default" forIndexPath:indexPath];
-    cell.providerList.text = @"Provider";//[self.dataArray objectAtIndex:indexPath.row];//@"Provider";
+    IBUser *user = self.filteredData?self.filteredData[indexPath.row]:self.dataArray[indexPath.row];
+
+    cell.providerList.text = [NSString stringWithFormat:@"%@",user.fullName];
     return cell;
 }
 

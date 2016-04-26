@@ -22,7 +22,6 @@
     [super viewDidLoad];
     [[IBDataManager getInstance]getDataFromURL:kallPatients parameter:nil onSuccess:^(NSData *data) {
         NSLog(@"%@",data);
-        //var dataString = NSString(data: data!, encoding:NSUTF8StringEncoding);
         NSString* myString;
         myString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
         NSLog(@"data is : %@", myString);

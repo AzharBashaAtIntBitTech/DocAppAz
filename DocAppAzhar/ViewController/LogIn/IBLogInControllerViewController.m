@@ -38,25 +38,6 @@
 
 #pragma mark - Actions
 
-- (IBAction)practiceLogIn:(id)sender {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"practiceStoryBoard" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"IBProviderListController"];
-    [self.navigationController showViewController:vc sender:nil];
-
-}
-- (IBAction)providerLogIn:(id)sender {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"providerStoryBoard" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"IBPatientListController"];
-    [self.navigationController showViewController:vc sender:nil];
-
-}
-- (IBAction)patientLogIn:(id)sender {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"patientStoryBoard" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"IBPatientAppointmentListController"];
-    [self.navigationController showViewController:vc sender:nil];
-
-}
-
 - (IBAction)logInButton:(id)sender {
     if([self.userNameTextField.text isEqualToString:@"practice"] && [self.passwordTextField.text isEqualToString:@"password"]){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"practiceStoryBoard" bundle:nil];
@@ -77,10 +58,6 @@
 
         
     }else{
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Invalid userName or password"delegate:self
-//                                              cancelButtonTitle:@"OK"
-//                                              otherButtonTitles:nil];
-//        [alert show];
         
         UIAlertController * alert=   [UIAlertController
                                       alertControllerWithTitle:@"Error"

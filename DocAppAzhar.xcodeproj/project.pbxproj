@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2403FB891CCDECD800571335 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FB881CCDECD800571335 /* main.m */; };
+		2403FB8C1CCDECD800571335 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FB8B1CCDECD800571335 /* AppDelegate.m */; };
+		2403FB921CCDECD800571335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2403FB901CCDECD800571335 /* Main.storyboard */; };
+		2403FB941CCDECD800571335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2403FB931CCDECD800571335 /* Assets.xcassets */; };
+		2403FB971CCDECD800571335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2403FB951CCDECD800571335 /* LaunchScreen.storyboard */; };
+		2403FBA21CCDECD800571335 /* DocAppAzharTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBA11CCDECD800571335 /* DocAppAzharTests.m */; };
+		2403FBAD1CCDECD800571335 /* DocAppAzharUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBAC1CCDECD800571335 /* DocAppAzharUITests.m */; };
+		2403FBBE1CCDEDB100571335 /* practiceStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2403FBBD1CCDEDB100571335 /* practiceStoryBoard.storyboard */; };
+		2403FBC01CCDEDC200571335 /* providerStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2403FBBF1CCDEDC200571335 /* providerStoryBoard.storyboard */; };
+		2403FBC21CCDEDD300571335 /* patientStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2403FBC11CCDEDD300571335 /* patientStoryBoard.storyboard */; };
+		2403FBC61CCDEEC200571335 /* IBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBC51CCDEEC200571335 /* IBBaseViewController.m */; };
+		2403FBC91CCDEEEE00571335 /* IBBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBC81CCDEEEE00571335 /* IBBaseTableViewController.m */; };
+		2403FBCC1CCDEF2A00571335 /* IBBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBCB1CCDEF2A00571335 /* IBBaseTableViewCell.m */; };
+		2403FBCF1CCDEF9600571335 /* IBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBCE1CCDEF9600571335 /* IBDataManager.m */; };
+		2403FBD71CCDF5E700571335 /* IBProviderListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBD61CCDF5E700571335 /* IBProviderListController.m */; };
+		2403FBDA1CCDF6CF00571335 /* IBPatientListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBD91CCDF6CF00571335 /* IBPatientListController.m */; };
+		2403FBDD1CCDF7C200571335 /* IBPatientAppointmentListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBDC1CCDF7C200571335 /* IBPatientAppointmentListController.m */; };
+		2403FBE01CCDF86200571335 /* IBLogInControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403FBDF1CCDF86200571335 /* IBLogInControllerViewController.m */; };
+		24AEBA401CCE2CD200A98AAD /* NetworkURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24AEBA3F1CCE2CD200A98AAD /* NetworkURL.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2403FB9E1CCDECD800571335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2403FB7C1CCDECD800571335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2403FB831CCDECD800571335;
+			remoteInfo = DocAppAzhar;
+		};
+		2403FBA91CCDECD800571335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2403FB7C1CCDECD800571335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2403FB831CCDECD800571335;
+			remoteInfo = DocAppAzhar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2403FB841CCDECD800571335 /* DocAppAzhar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocAppAzhar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2403FB881CCDECD800571335 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2403FB8A1CCDECD800571335 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2403FB8B1CCDECD800571335 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2403FB911CCDECD800571335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2403FB931CCDECD800571335 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2403FB961CCDECD800571335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2403FB981CCDECD800571335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2403FB9D1CCDECD800571335 /* DocAppAzharTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocAppAzharTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2403FBA11CCDECD800571335 /* DocAppAzharTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocAppAzharTests.m; sourceTree = "<group>"; };
+		2403FBA31CCDECD800571335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2403FBA81CCDECD800571335 /* DocAppAzharUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocAppAzharUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2403FBAC1CCDECD800571335 /* DocAppAzharUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocAppAzharUITests.m; sourceTree = "<group>"; };
+		2403FBAE1CCDECD800571335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2403FBBD1CCDEDB100571335 /* practiceStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = practiceStoryBoard.storyboard; sourceTree = "<group>"; };
+		2403FBBF1CCDEDC200571335 /* providerStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = providerStoryBoard.storyboard; sourceTree = "<group>"; };
+		2403FBC11CCDEDD300571335 /* patientStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = patientStoryBoard.storyboard; sourceTree = "<group>"; };
+		2403FBC41CCDEEC200571335 /* IBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBBaseViewController.h; sourceTree = "<group>"; };
+		2403FBC51CCDEEC200571335 /* IBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBBaseViewController.m; sourceTree = "<group>"; };
+		2403FBC71CCDEEEE00571335 /* IBBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBBaseTableViewController.h; sourceTree = "<group>"; };
+		2403FBC81CCDEEEE00571335 /* IBBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBBaseTableViewController.m; sourceTree = "<group>"; };
+		2403FBCA1CCDEF2A00571335 /* IBBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBBaseTableViewCell.h; sourceTree = "<group>"; };
+		2403FBCB1CCDEF2A00571335 /* IBBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBBaseTableViewCell.m; sourceTree = "<group>"; };
+		2403FBCD1CCDEF9600571335 /* IBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBDataManager.h; sourceTree = "<group>"; };
+		2403FBCE1CCDEF9600571335 /* IBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBDataManager.m; sourceTree = "<group>"; };
+		2403FBD51CCDF5E700571335 /* IBProviderListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBProviderListController.h; sourceTree = "<group>"; };
+		2403FBD61CCDF5E700571335 /* IBProviderListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBProviderListController.m; sourceTree = "<group>"; };
+		2403FBD81CCDF6CF00571335 /* IBPatientListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBPatientListController.h; sourceTree = "<group>"; };
+		2403FBD91CCDF6CF00571335 /* IBPatientListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBPatientListController.m; sourceTree = "<group>"; };
+		2403FBDB1CCDF7C200571335 /* IBPatientAppointmentListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBPatientAppointmentListController.h; sourceTree = "<group>"; };
+		2403FBDC1CCDF7C200571335 /* IBPatientAppointmentListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBPatientAppointmentListController.m; sourceTree = "<group>"; };
+		2403FBDE1CCDF86200571335 /* IBLogInControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLogInControllerViewController.h; sourceTree = "<group>"; };
+		2403FBDF1CCDF86200571335 /* IBLogInControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLogInControllerViewController.m; sourceTree = "<group>"; };
+		24AEBA3F1CCE2CD200A98AAD /* NetworkURL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkURL.plist; sourceTree = "<group>"; };
+		24AEBA411CCE342800A98AAD /* IBAppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAppConstant.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2403FB811CCDECD800571335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2403FB9A1CCDECD800571335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2403FBA51CCDECD800571335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2403FB7B1CCDECD800571335 = {
+			isa = PBXGroup;
+			children = (
+				2403FB861CCDECD800571335 /* DocAppAzhar */,
+				2403FBA01CCDECD800571335 /* DocAppAzharTests */,
+				2403FBAB1CCDECD800571335 /* DocAppAzharUITests */,
+				2403FB851CCDECD800571335 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2403FB851CCDECD800571335 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2403FB841CCDECD800571335 /* DocAppAzhar.app */,
+				2403FB9D1CCDECD800571335 /* DocAppAzharTests.xctest */,
+				2403FBA81CCDECD800571335 /* DocAppAzharUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2403FB861CCDECD800571335 /* DocAppAzhar */ = {
+			isa = PBXGroup;
+			children = (
+				2403FB8A1CCDECD800571335 /* AppDelegate.h */,
+				2403FB8B1CCDECD800571335 /* AppDelegate.m */,
+				2403FB901CCDECD800571335 /* Main.storyboard */,
+				2403FBBD1CCDEDB100571335 /* practiceStoryBoard.storyboard */,
+				2403FBBF1CCDEDC200571335 /* providerStoryBoard.storyboard */,
+				2403FBC11CCDEDD300571335 /* patientStoryBoard.storyboard */,
+				2403FBBC1CCDED6E00571335 /* ViewController */,
+				2403FBBB1CCDED6600571335 /* BaseViewController */,
+				2403FBBA1CCDED5A00571335 /* DataManager */,
+				2403FB931CCDECD800571335 /* Assets.xcassets */,
+				2403FB951CCDECD800571335 /* LaunchScreen.storyboard */,
+				2403FB981CCDECD800571335 /* Info.plist */,
+				2403FB871CCDECD800571335 /* Supporting Files */,
+			);
+			path = DocAppAzhar;
+			sourceTree = "<group>";
+		};
+		2403FB871CCDECD800571335 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2403FB881CCDECD800571335 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2403FBA01CCDECD800571335 /* DocAppAzharTests */ = {
+			isa = PBXGroup;
+			children = (
+				2403FBA11CCDECD800571335 /* DocAppAzharTests.m */,
+				2403FBA31CCDECD800571335 /* Info.plist */,
+			);
+			path = DocAppAzharTests;
+			sourceTree = "<group>";
+		};
+		2403FBAB1CCDECD800571335 /* DocAppAzharUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2403FBAC1CCDECD800571335 /* DocAppAzharUITests.m */,
+				2403FBAE1CCDECD800571335 /* Info.plist */,
+			);
+			path = DocAppAzharUITests;
+			sourceTree = "<group>";
+		};
+		2403FBBA1CCDED5A00571335 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				2403FBCD1CCDEF9600571335 /* IBDataManager.h */,
+				2403FBCE1CCDEF9600571335 /* IBDataManager.m */,
+				24AEBA411CCE342800A98AAD /* IBAppConstant.h */,
+				24AEBA3F1CCE2CD200A98AAD /* NetworkURL.plist */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		2403FBBB1CCDED6600571335 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2403FBC41CCDEEC200571335 /* IBBaseViewController.h */,
+				2403FBC51CCDEEC200571335 /* IBBaseViewController.m */,
+				2403FBC71CCDEEEE00571335 /* IBBaseTableViewController.h */,
+				2403FBC81CCDEEEE00571335 /* IBBaseTableViewController.m */,
+				2403FBCA1CCDEF2A00571335 /* IBBaseTableViewCell.h */,
+				2403FBCB1CCDEF2A00571335 /* IBBaseTableViewCell.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		2403FBBC1CCDED6E00571335 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2403FBD41CCDF4FD00571335 /* LogIn */,
+				2403FBD31CCDF3A200571335 /* Practice */,
+				2403FBD21CCDF39B00571335 /* Provider */,
+				2403FBD11CCDF39200571335 /* Patient */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2403FBD11CCDF39200571335 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				2403FBD81CCDF6CF00571335 /* IBPatientListController.h */,
+				2403FBD91CCDF6CF00571335 /* IBPatientListController.m */,
+				2403FBDB1CCDF7C200571335 /* IBPatientAppointmentListController.h */,
+				2403FBDC1CCDF7C200571335 /* IBPatientAppointmentListController.m */,
+			);
+			name = Patient;
+			path = patient;
+			sourceTree = "<group>";
+		};
+		2403FBD21CCDF39B00571335 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				2403FBD51CCDF5E700571335 /* IBProviderListController.h */,
+				2403FBD61CCDF5E700571335 /* IBProviderListController.m */,
+			);
+			name = Provider;
+			path = provider;
+			sourceTree = "<group>";
+		};
+		2403FBD31CCDF3A200571335 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Practice;
+			path = practice;
+			sourceTree = "<group>";
+		};
+		2403FBD41CCDF4FD00571335 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				2403FBDE1CCDF86200571335 /* IBLogInControllerViewController.h */,
+				2403FBDF1CCDF86200571335 /* IBLogInControllerViewController.m */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2403FB831CCDECD800571335 /* DocAppAzhar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2403FBB11CCDECD800571335 /* Build configuration list for PBXNativeTarget "DocAppAzhar" */;
+			buildPhases = (
+				2403FB801CCDECD800571335 /* Sources */,
+				2403FB811CCDECD800571335 /* Frameworks */,
+				2403FB821CCDECD800571335 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocAppAzhar;
+			productName = DocAppAzhar;
+			productReference = 2403FB841CCDECD800571335 /* DocAppAzhar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2403FB9C1CCDECD800571335 /* DocAppAzharTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2403FBB41CCDECD800571335 /* Build configuration list for PBXNativeTarget "DocAppAzharTests" */;
+			buildPhases = (
+				2403FB991CCDECD800571335 /* Sources */,
+				2403FB9A1CCDECD800571335 /* Frameworks */,
+				2403FB9B1CCDECD800571335 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2403FB9F1CCDECD800571335 /* PBXTargetDependency */,
+			);
+			name = DocAppAzharTests;
+			productName = DocAppAzharTests;
+			productReference = 2403FB9D1CCDECD800571335 /* DocAppAzharTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2403FBA71CCDECD800571335 /* DocAppAzharUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2403FBB71CCDECD800571335 /* Build configuration list for PBXNativeTarget "DocAppAzharUITests" */;
+			buildPhases = (
+				2403FBA41CCDECD800571335 /* Sources */,
+				2403FBA51CCDECD800571335 /* Frameworks */,
+				2403FBA61CCDECD800571335 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2403FBAA1CCDECD800571335 /* PBXTargetDependency */,
+			);
+			name = DocAppAzharUITests;
+			productName = DocAppAzharUITests;
+			productReference = 2403FBA81CCDECD800571335 /* DocAppAzharUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2403FB7C1CCDECD800571335 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MacMini1;
+				TargetAttributes = {
+					2403FB831CCDECD800571335 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2403FB9C1CCDECD800571335 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2403FB831CCDECD800571335;
+					};
+					2403FBA71CCDECD800571335 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2403FB831CCDECD800571335;
+					};
+				};
+			};
+			buildConfigurationList = 2403FB7F1CCDECD800571335 /* Build configuration list for PBXProject "DocAppAzhar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2403FB7B1CCDECD800571335;
+			productRefGroup = 2403FB851CCDECD800571335 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2403FB831CCDECD800571335 /* DocAppAzhar */,
+				2403FB9C1CCDECD800571335 /* DocAppAzharTests */,
+				2403FBA71CCDECD800571335 /* DocAppAzharUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2403FB821CCDECD800571335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2403FBBE1CCDEDB100571335 /* practiceStoryBoard.storyboard in Resources */,
+				2403FBC21CCDEDD300571335 /* patientStoryBoard.storyboard in Resources */,
+				2403FBC01CCDEDC200571335 /* providerStoryBoard.storyboard in Resources */,
+				24AEBA401CCE2CD200A98AAD /* NetworkURL.plist in Resources */,
+				2403FB971CCDECD800571335 /* LaunchScreen.storyboard in Resources */,
+				2403FB941CCDECD800571335 /* Assets.xcassets in Resources */,
+				2403FB921CCDECD800571335 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2403FB9B1CCDECD800571335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2403FBA61CCDECD800571335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2403FB801CCDECD800571335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2403FBCC1CCDEF2A00571335 /* IBBaseTableViewCell.m in Sources */,
+				2403FBE01CCDF86200571335 /* IBLogInControllerViewController.m in Sources */,
+				2403FBDD1CCDF7C200571335 /* IBPatientAppointmentListController.m in Sources */,
+				2403FB8C1CCDECD800571335 /* AppDelegate.m in Sources */,
+				2403FBC91CCDEEEE00571335 /* IBBaseTableViewController.m in Sources */,
+				2403FBCF1CCDEF9600571335 /* IBDataManager.m in Sources */,
+				2403FBDA1CCDF6CF00571335 /* IBPatientListController.m in Sources */,
+				2403FBC61CCDEEC200571335 /* IBBaseViewController.m in Sources */,
+				2403FB891CCDECD800571335 /* main.m in Sources */,
+				2403FBD71CCDF5E700571335 /* IBProviderListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2403FB991CCDECD800571335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2403FBA21CCDECD800571335 /* DocAppAzharTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2403FBA41CCDECD800571335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2403FBAD1CCDECD800571335 /* DocAppAzharUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2403FB9F1CCDECD800571335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2403FB831CCDECD800571335 /* DocAppAzhar */;
+			targetProxy = 2403FB9E1CCDECD800571335 /* PBXContainerItemProxy */;
+		};
+		2403FBAA1CCDECD800571335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2403FB831CCDECD800571335 /* DocAppAzhar */;
+			targetProxy = 2403FBA91CCDECD800571335 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2403FB901CCDECD800571335 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2403FB911CCDECD800571335 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2403FB951CCDECD800571335 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2403FB961CCDECD800571335 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2403FBAF1CCDECD800571335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2403FBB01CCDECD800571335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2403FBB21CCDECD800571335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DocAppAzhar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = intbittech.DocAppAzhar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2403FBB31CCDECD800571335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DocAppAzhar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = intbittech.DocAppAzhar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2403FBB51CCDECD800571335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DocAppAzharTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = intbittech.DocAppAzharTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DocAppAzhar.app/DocAppAzhar";
+			};
+			name = Debug;
+		};
+		2403FBB61CCDECD800571335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DocAppAzharTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = intbittech.DocAppAzharTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DocAppAzhar.app/DocAppAzhar";
+			};
+			name = Release;
+		};
+		2403FBB81CCDECD800571335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DocAppAzharUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = intbittech.DocAppAzharUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DocAppAzhar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2403FBB91CCDECD800571335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DocAppAzharUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = intbittech.DocAppAzharUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DocAppAzhar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2403FB7F1CCDECD800571335 /* Build configuration list for PBXProject "DocAppAzhar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2403FBAF1CCDECD800571335 /* Debug */,
+				2403FBB01CCDECD800571335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2403FBB11CCDECD800571335 /* Build configuration list for PBXNativeTarget "DocAppAzhar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2403FBB21CCDECD800571335 /* Debug */,
+				2403FBB31CCDECD800571335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2403FBB41CCDECD800571335 /* Build configuration list for PBXNativeTarget "DocAppAzharTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2403FBB51CCDECD800571335 /* Debug */,
+				2403FBB61CCDECD800571335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2403FBB71CCDECD800571335 /* Build configuration list for PBXNativeTarget "DocAppAzharUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2403FBB81CCDECD800571335 /* Debug */,
+				2403FBB91CCDECD800571335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2403FB7C1CCDECD800571335 /* Project object */;
+}

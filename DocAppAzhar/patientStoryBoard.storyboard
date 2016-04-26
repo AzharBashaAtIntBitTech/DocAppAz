@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Patient Appointment List Controller-->
+        <scene sceneID="elQ-yU-GfB">
+            <objects>
+                <viewController storyboardIdentifier="IBPatientAppointmentListController" id="Hgn-54-YX3" customClass="IBPatientAppointmentListController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OCf-oq-2Wj"/>
+                        <viewControllerLayoutGuide type="bottom" id="yn3-Xv-u7F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4WX-gA-f9I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gi0-Df-5Uf">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="default" rowHeight="90" id="E9k-Cg-tRl" customClass="IBBaseTableViewCell">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9k-Cg-tRl" id="Cg5-cr-9TX">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppointmentList" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vk-29-yzX">
+                                                    <rect key="frame" x="20" y="20" width="560" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4Vk-29-yzX" secondAttribute="trailing" constant="20" id="Hvr-aB-7MM"/>
+                                                <constraint firstItem="4Vk-29-yzX" firstAttribute="leading" secondItem="Cg5-cr-9TX" secondAttribute="leading" constant="20" id="LP6-r4-lxG"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Vk-29-yzX" secondAttribute="bottom" constant="20" id="n5e-hi-xoK"/>
+                                                <constraint firstItem="4Vk-29-yzX" firstAttribute="top" secondItem="Cg5-cr-9TX" secondAttribute="top" constant="20" id="rzK-8T-ogU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="appointmentList" destination="4Vk-29-yzX" id="Af0-f2-81C"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hgn-54-YX3" id="dmZ-GY-4y9"/>
+                                    <outlet property="delegate" destination="Hgn-54-YX3" id="xWU-aq-uFL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gi0-Df-5Uf" firstAttribute="leading" secondItem="4WX-gA-f9I" secondAttribute="leading" id="UJI-Ks-DPg"/>
+                            <constraint firstAttribute="trailing" secondItem="Gi0-Df-5Uf" secondAttribute="trailing" id="fJT-W1-Ebl"/>
+                            <constraint firstItem="Gi0-Df-5Uf" firstAttribute="top" secondItem="OCf-oq-2Wj" secondAttribute="bottom" id="j1U-kw-YBD"/>
+                            <constraint firstItem="yn3-Xv-u7F" firstAttribute="top" secondItem="Gi0-Df-5Uf" secondAttribute="bottom" id="sZd-b1-a7g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PyS-Ws-3jU">
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="A0h-l3-wnz">
+                            <connections>
+                                <action selector="dismiss:" destination="Hgn-54-YX3" id="45Q-2a-F5l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Gi0-Df-5Uf" id="JQh-OL-3un"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wd-ii-POR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1159" y="498"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="otJ-6D-JEd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="92v-zj-RhW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P1b-hL-GsT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hgn-54-YX3" kind="relationship" relationship="rootViewController" id="sDv-2u-kdO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZO-vt-AoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="498"/>
+        </scene>
+    </scenes>
+</document>

@@ -9,6 +9,7 @@
 #import "IBPatientListController.h"
 #import "IBBaseTableViewCell.h"
 #import "IBDataManager.h"
+#import "IBUser.h"
 #import "IBAppConstant.h"
 @interface IBPatientListController ()
 
@@ -20,11 +21,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[IBDataManager getInstance]getDataFromURL:kallPatients parameter:nil onSuccess:^(NSData *data) {
+    [[IBDataManager getInstance]getDataFromURL:kallProviders parameter:nil onSuccess:^(NSData *data) {
         NSLog(@"%@",data);
-        NSString* myString;
-        myString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
-        NSLog(@"data is : %@", myString);
+        NSDictionary *userResponse =[NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        NSMutableArray *userResponseArray = [[userResponse objectForKey:@"d"]objectForKey:@"providers"];
+        NSLog(@"%@",userResponseArray);
+        userArray = [[NSMutableArray alloc]init];
+        for (int index = 0; index< [userResponseArray count]; index++) {
+            IBUser *user = [[IBUser alloc]init];
+            user.lastName = [[userResponseArray objectAtIndex:index] objectForKey:@"lastName"];
+            [userArray addObject:user];
+        }
+        [self setDataArray:[userArray copy]];
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+//        NSString* myString;
+//        myString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+//        NSLog(@"data is : %@", myString);
     } onError:^(NSError *error) {
         
     }];
@@ -51,13 +63,17 @@
 
 - (NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;//self.dataArray.count;
+    if (self.filteredData) {
+        return [self.filteredData count];
+    }
+    return self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     IBBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"default" forIndexPath:indexPath];
-    cell.patientList.text = @"PatientName";
+    IBUser *user = self.filteredData?self.filteredData[indexPath.row]:self.dataArray[indexPath.row];
+    cell.patientList.text = [NSString stringWithFormat:@"%@",user.lastName];
     return cell;
 }
 

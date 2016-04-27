@@ -12,11 +12,11 @@
 @property (nonatomic, strong) NSDictionary *BASE_URL;
 
 + (IBDataManager *)getInstance;
-- (NSMutableString *)tokenString;
+
 - (NSString *)getURL:(NSString *)ObjectKey;
--(BOOL)isApiSuccess:(NSData *)responseData;
 
 - (void)getDataFromURL:(NSString *)baseUrl parameter:(NSDictionary *)dictParameter  onSuccess:(void(^)(NSData *data))_onSuccess onError:(void(^)(NSError *error))_onError;
+
 - (void)getAcessToken:(NSString *)baseUrl onSuccess:(void(^)(NSData *data))_onSuccess onError:(void(^)(NSError *error))_onError;
 
 @end

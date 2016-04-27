@@ -66,7 +66,6 @@
     if (self.filteredData) {
     return [self.filteredData count];
 }
-
     return self.dataArray.count;
     
 }
@@ -76,7 +75,6 @@
 
     IBBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"default" forIndexPath:indexPath];
     IBUser *user = self.filteredData?self.filteredData[indexPath.row]:self.dataArray[indexPath.row];
-
     cell.providerList.text = [NSString stringWithFormat:@"%@",user.fullName];
     return cell;
 }

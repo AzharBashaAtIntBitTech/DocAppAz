@@ -15,5 +15,4 @@
 }
 @property (strong, nonatomic) NSMutableArray *filteredData;
 
-
 @end

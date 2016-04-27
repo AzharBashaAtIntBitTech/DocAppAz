@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Patient Appointment List Controller-->
+        <!--Appointments-->
         <scene sceneID="elQ-yU-GfB">
             <objects>
                 <viewController storyboardIdentifier="IBPatientAppointmentListController" id="Hgn-54-YX3" customClass="IBPatientAppointmentListController" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gi0-Df-5Uf">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="default" rowHeight="90" id="E9k-Cg-tRl" customClass="IBBaseTableViewCell">
@@ -57,11 +57,11 @@
                         <constraints>
                             <constraint firstItem="Gi0-Df-5Uf" firstAttribute="leading" secondItem="4WX-gA-f9I" secondAttribute="leading" id="UJI-Ks-DPg"/>
                             <constraint firstAttribute="trailing" secondItem="Gi0-Df-5Uf" secondAttribute="trailing" id="fJT-W1-Ebl"/>
-                            <constraint firstItem="Gi0-Df-5Uf" firstAttribute="top" secondItem="OCf-oq-2Wj" secondAttribute="bottom" id="j1U-kw-YBD"/>
+                            <constraint firstItem="Gi0-Df-5Uf" firstAttribute="top" secondItem="OCf-oq-2Wj" secondAttribute="bottom" constant="-64" id="j1U-kw-YBD"/>
                             <constraint firstItem="yn3-Xv-u7F" firstAttribute="top" secondItem="Gi0-Df-5Uf" secondAttribute="bottom" id="sZd-b1-a7g"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PyS-Ws-3jU">
+                    <navigationItem key="navigationItem" title="Appointments" id="PyS-Ws-3jU">
                         <barButtonItem key="leftBarButtonItem" title="LogOut" id="A0h-l3-wnz">
                             <connections>
                                 <action selector="dismiss:" destination="Hgn-54-YX3" id="45Q-2a-F5l"/>

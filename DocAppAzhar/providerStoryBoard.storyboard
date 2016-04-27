@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Patient List Controller-->
+        <!--Patients-->
         <scene sceneID="cOT-0c-sJ4">
             <objects>
                 <viewController storyboardIdentifier="IBPatientListController" id="asi-v0-G5Z" customClass="IBPatientListController" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F66-ee-a85">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="default" rowHeight="90" id="ptt-he-B9x" customClass="IBBaseTableViewCell">
@@ -55,13 +55,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="F66-ee-a85" firstAttribute="top" secondItem="me5-Bf-CVa" secondAttribute="bottom" id="KNJ-Q0-Nli"/>
+                            <constraint firstItem="F66-ee-a85" firstAttribute="top" secondItem="me5-Bf-CVa" secondAttribute="bottom" constant="-64" id="KNJ-Q0-Nli"/>
                             <constraint firstItem="SGP-eV-R1g" firstAttribute="top" secondItem="F66-ee-a85" secondAttribute="bottom" id="Yhj-UH-W2Q"/>
                             <constraint firstAttribute="trailing" secondItem="F66-ee-a85" secondAttribute="trailing" id="hKN-ky-Xvy"/>
                             <constraint firstItem="F66-ee-a85" firstAttribute="leading" secondItem="2R5-zi-eAP" secondAttribute="leading" id="iH2-gG-um8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Vqm-YT-mej">
+                    <navigationItem key="navigationItem" title="Patients" id="Vqm-YT-mej">
                         <barButtonItem key="leftBarButtonItem" title="LogOut" id="l54-cm-dqW">
                             <connections>
                                 <action selector="dismiss:" destination="asi-v0-G5Z" id="aBv-CL-NNO"/>

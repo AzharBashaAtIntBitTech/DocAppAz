@@ -18,4 +18,5 @@
 #define kallProviders @"All_Providers"
 #define kallPatients @"All_Patients"
 #define kallAppointments @"All_Appointments"
+#define kallPractices @"All_Practices"
 
